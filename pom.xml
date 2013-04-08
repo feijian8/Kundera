@@ -77,6 +77,7 @@
   </properties>
 
 
+<!--
   <repositories>
      <repository>
       <id>atlassian</id>
@@ -114,13 +115,14 @@
       </snapshots>
     </repository>
   </repositories>
+-->
   <!-- Build profiles -->
   <profiles>
 
     <profile>
       <id>all</id>
       <activation>
-        <activeByDefault>true</activeByDefault>
+        <activeByDefault>false</activeByDefault>
       </activation>
       <modules>
         <module>kundera-core</module>
@@ -202,7 +204,7 @@
     <profile>
       <id>cassandra</id>
       <activation>
-        <activeByDefault>false</activeByDefault>
+        <activeByDefault>true</activeByDefault>
       </activation>
       <modules>
         <module>kundera-core</module>
