@@ -277,6 +277,8 @@ public class NativeQueryCQLV3Test
     {
         // CassandraCli.dropKeySpace("KunderaExamples");
         CassandraCli.dropKeySpace(schema);
+
+        KunderaMetadata.INSTANCE.setApplicationMetadata(null);
     }
 
 }
